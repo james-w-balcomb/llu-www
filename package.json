@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/james-w-balcomb/llu-www/issues"
   },
-  "homepage": "https://github.com/james-w-balcomb/llu-www#readme"
+  "homepage": "https://github.com/james-w-balcomb/llu-www#readme",
+  "dependencies": {
+    "next": "^9.0.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
 }
