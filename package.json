@@ -1,27 +1,15 @@
 {
   "name": "llu-www",
-  "version": "1.0.0",
-  "description": "LLU WWW",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-	"dev": "next",
-	"build": "next build",
-	"start": "next start"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/james-w-balcomb/llu-www.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/james-w-balcomb/llu-www/issues"
-  },
-  "homepage": "https://github.com/james-w-balcomb/llu-www#readme",
   "dependencies": {
-    "next": "^9.0.3",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "next": "9.0.3",
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
   }
 }
