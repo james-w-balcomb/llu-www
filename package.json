@@ -3,13 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "cross-env-shell LLU_WWW_PORT=3100 next dev -p $LLU_WWW_PORT",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p $LLU_WWW_PORT"
   },
   "dependencies": {
+    "dotenv-flow": "^3.1.0",
     "next": "9.0.3",
     "react": "16.9.0",
     "react-dom": "16.9.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0"
   }
 }
