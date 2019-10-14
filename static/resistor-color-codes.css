@@ -1,0 +1,118 @@
+
+.resistor-color-code-table {
+    color: black;
+    background-color: white;
+    border: 1px solid #414141;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 14px;
+    text-align: center;
+    width: auto;
+    margin: 20px auto;
+    -webkit-box-shadow: 1px 0px 30px -6px rgba(50,50,50,0.5);
+    -moz-box-shadow: 1px 0px 30px -6px rgba(50,50,50,0.5);
+    box-shadow: 1px 0px 30px -6px rgba(50,50,50,0.5);
+}
+.resistor-color-code-table-head {
+}
+.resistor-color-code-table-head-row {
+}
+.resistor-color-code-table-head-data {
+}
+.resistor-color-code-table-body {
+}
+.resistor-color-code-table-body-row {
+}
+.resistor-color-code-table-body-data {
+}
+.resistor-color-code-table td {
+    padding: 10px 5px;
+}
+.resistor-color-code-table thead {
+    color: white;
+    background-color: #414141;
+}
+.resistor-color-code-table thead tr {
+}
+.resistor-color-code-table thead tr td {
+    border: 1px solid #414141;
+    width: 128px;
+}
+table thead tr:first-child td {
+    border-right: 1px solid #FFFFFF;
+}
+table thead tr:first-child td:last-child {
+    border-right: 1px solid #414141;
+}
+.resistor-color-code-table tbody {
+}
+.resistor-color-code-table tbody tr {
+}
+.resistor-color-code-table tbody tr td {
+    border: 1px solid #414141;
+}
+
+.resistor-color-code-table-color-black {
+    color: white;
+    background-color: black;
+    border: 1px solid #414141;
+}
+.resistor-color-code-table-color-brown {
+    color: white;
+    background-color: brown;
+    border: 1px solid #414141;
+}
+.resistor-color-code-table-color-red {
+    color: black;
+    background-color: red;
+    border: 1px solid #414141;
+}
+.resistor-color-code-table-color-orange {
+    color: black;
+    background-color: orange;
+    border: 1px solid #414141;
+}
+.resistor-color-code-table-color-yellow {
+    color: black;
+    background-color: yellow;
+    border: 1px solid #414141;
+}
+.resistor-color-code-table-color-green {
+    color: black;
+    background-color: green;
+    border: 1px solid #414141;
+}
+.resistor-color-code-table-color-blue {
+    color: white;
+    background-color: blue;
+    border: 1px solid #414141;
+}
+.resistor-color-code-table-color-violet {
+    color: black;
+    background-color: violet;
+    border: 1px solid #414141;
+}
+.resistor-color-code-table-color-grey {
+    color: black;
+    background-color: grey;
+    border: 1px solid #414141;
+}
+.resistor-color-code-table-color-white {
+    color: black;
+    background-color: white;
+    border: 1px solid #414141;
+}
+.resistor-color-code-table-color-gold {
+    color: black;
+    background-color: gold;
+    border: 1px solid #414141;
+}
+.resistor-color-code-table-color-silver {
+    color: black;
+    background-color: silver;
+    border: 1px solid #414141;
+}
+.resistor-color-code-table-color-none {
+    color: black;
+    background-color: white;
+}
