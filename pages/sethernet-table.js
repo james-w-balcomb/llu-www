@@ -11,10 +11,6 @@ const SethernetTable = props => (
         <Head>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/react-table/6.10.3/react-table.css" />
         </Head>
-        <div>
-            <p>Props:</p>
-            {props}
-        </div>
         <div className="mr-5 ml-5">
             <div >
                 <h3 className="d-flex justify-content-center mt-5">{props.table.title}</h3>
