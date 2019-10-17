@@ -40,7 +40,7 @@ function checkcol(props) {
 
 SethernetTable.getInitialProps = async function(context) {
     const { id } = context.query
-    const res = await fetch(`http://localhost:3001/api/tables/${id}`)
+    const res = await fetch(`http://localhost:3300/api/tables/${id}`)
     const table = await res.json()
     return { table }
 }

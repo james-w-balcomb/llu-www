@@ -20,7 +20,7 @@ const SethernetIndex = (props) => (
 )
 
 SethernetIndex.getInitialProps = async function() {
-    const res = await fetch('http://localhost:3001/api/tables')
+    const res = await fetch('http://localhost:3300/api/tables')
     const data = await res.json()
     return {
         tables: data
