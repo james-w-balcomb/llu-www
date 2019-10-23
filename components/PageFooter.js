@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from "next/link";
+import ContentCardsData from "./ContentCardsData";
 
 class PageFooter extends React.Component {
 
@@ -7,16 +8,18 @@ class PageFooter extends React.Component {
         return (
             <React.Fragment>
 
-                   <hr className="mt-3"/>
-                    <p className="text-muted small">
-                        <Link href="/"><a className="text-muted font-weight-bold"><span className="icon ion-logo-github"/> Home</a></Link>
-                        <span> :: </span>
-                        <Link href="/about"><a className="text-muted font-weight-bold">About</a></Link>
-                        <span> :: </span>
-                        <Link href="/terms-and-conditions"><a className="text-muted font-weight-bold">T&C</a></Link>
-                        .
+                   <hr className="mt-4 mb-2" />
+                    <div className="text-muted small">
+                        <span className="ml-2">::</span>
+                        <span className="ml-2">
+                        <Link href="/"><a className="text-muted font-weight-bold">Home</a></Link>
+                        </span>
+                        <span className="ml-2">::</span>
                         <span className="ml-2">&copy; {new Date().getFullYear()}.</span>
-                    </p>
+                    </div>
+                <hr className="mt-2 mb-4" />
+
+                <ContentCardsData />
 
             </React.Fragment>
         )
