@@ -11,7 +11,6 @@ import {
     CardBody,
     CardText,
     CardLink } from 'reactstrap';
-import PageLayout from "./PageLayout";
 import Link from "next/link";
 
 const { publicRuntimeConfig } = getConfig();
@@ -47,10 +46,10 @@ class ContentCardsData extends React.Component {
         console.log("ContentCardsData.render()");
         // console.log("props");
         // console.log(props);
-        console.log("this.props");
-        console.log(this.props);
-        console.log("this.state");
-        console.log(this.state);
+        // console.log("this.props");
+        // console.log(this.props);
+        // console.log("this.state");
+        // console.log(this.state);
 
         return(
 
@@ -67,9 +66,6 @@ class ContentCardsData extends React.Component {
                                             </CardLink>
                                         </CardTitle>
                                         <CardText className="mb-4"> {contentDocument.contentPageDescription}</CardText>
-                                        <Link href={{ pathname: '/content', query: { id: contentDocument.contentPagePath } }} as={`/content/${contentDocument.contentPagePath}`}>
-                                            <a>{`/content/${contentDocument.contentPagePath}`}</a>
-                                        </Link>
                                     </CardBody>
                                 </Card>
                             ))}
