@@ -15,9 +15,9 @@ class Index extends Page {
                 <Jumbotron
                     className="text-light rounded-0"
                     style={{
-                    backgroundColor: 'rgba(148,124,176,1)',
-                    background: 'radial-gradient(ellipse at center, rgba(187,172,205) 0%, rgba(148,124,176,1) 100%)',
-                    boxShadow: 'inset 0 0 100px rgba(0,0,0,0.1)'
+                        backgroundColor: 'rgba(148,124,176,1)',
+                        background: 'radial-gradient(ellipse at center, rgba(187,172,205) 0%, rgba(148,124,176,1) 100%)',
+                        boxShadow: 'inset 0 0 100px rgba(0,0,0,0.1)'
                     }}
                 >
 

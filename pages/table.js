@@ -82,6 +82,8 @@ class Table extends Page {
     }
 
     render() {
+        console.log("Table.render()");
+
         console.log("LLU_API_URL: " + LLU_API_URL);
         // console.log("props:");
         // console.log(props);

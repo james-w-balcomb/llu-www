@@ -11,6 +11,8 @@ import {
     CardBody,
     CardText,
     CardLink } from 'reactstrap';
+import PageLayout from "./PageLayout";
+import Link from "next/link";
 
 const { publicRuntimeConfig } = getConfig();
 const LLU_API_URL = publicRuntimeConfig.LLU_API_URL;
@@ -31,7 +33,7 @@ class ContentCardsData extends React.Component {
     }
 
     componentDidMount() {
-        console.log("componentDidMount");
+        console.log("ContentCardsData.componentDidMount()");
         fetch(`${LLU_API_URL}/page-path-title-description-list`)
             .then(res => res.json())
             .then((data) => {
@@ -60,11 +62,14 @@ class ContentCardsData extends React.Component {
                                 <Card key={contentDocument.contentPagePath} style={{ backgroundColor: '#A6A6A6', borderColor: '#947cb0'}}>
                                     <CardBody>
                                         <CardTitle className="h5 mb-2 pt-2 font-weight-bold">
-                                            <CardLink href={contentDocument.contentPagePath} className="btn btn-dark btn-block">
+                                            <CardLink href={`/content/${contentDocument.contentPagePath}`} className="btn btn-dark btn-block">
                                                 {contentDocument.contentPageTitle}
                                             </CardLink>
                                         </CardTitle>
                                         <CardText className="mb-4"> {contentDocument.contentPageDescription}</CardText>
+                                        <Link href={{ pathname: '/content', query: { id: contentDocument.contentPagePath } }} as={`/content/${contentDocument.contentPagePath}`}>
+                                            <a>{`/content/${contentDocument.contentPagePath}`}</a>
+                                        </Link>
                                     </CardBody>
                                 </Card>
                             ))}
