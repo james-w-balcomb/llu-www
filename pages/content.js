@@ -3,9 +3,31 @@ import getConfig from 'next/config'
 import fetch from 'isomorphic-unfetch'
 import Page from '../components/Page'
 import PageLayout from "../components/PageLayout";
+import ContentTypeRaw from "../components/ContentTypeRaw";
+import ContentTypeTable from "../components/ContentTypeTable";
 
 const { publicRuntimeConfig } = getConfig();
 const LLU_API_URL = publicRuntimeConfig.LLU_API_URL;
+
+function ContentType({contentDocument}) {
+    console.log("ContentType(contentDocument)");
+
+    console.log(contentDocument);
+
+    console.log(contentDocument.contentType);
+
+    const contentType = contentDocument.contentType;
+
+    console.log(contentType);
+
+    if (contentType === "table") {
+        console.log("ContentTypeTable");
+        return <ContentTypeTable  contentDocument={contentDocument} />;
+    }
+    console.log("ContentTypeRaw");
+    return <ContentTypeRaw  contentDocument={contentDocument} />;
+
+}
 
 class ContentPage extends Page {
 
@@ -64,9 +86,14 @@ class ContentPage extends Page {
                         {this.props.contentDocument.contentPageDescription}
                     </p>
                     <p>
-                        {this.props.contentDocument.contentContent}
+                        this.props.contentDocument.contentContent
                     </p>
                 </div>
+
+                <hr />
+
+                <ContentType contentDocument={this.props.contentDocument} />,
+
 
             </PageLayout>
         )
