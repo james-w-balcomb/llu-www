@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactTable from "react-table";
+import "../static/table-styles.css"
 
 class ContentTypeTable extends React.Component {
 
@@ -68,6 +69,7 @@ class ContentTypeTable extends React.Component {
                         columns={this.extractColumns(this.props.contentDocument.contentContent.table)}
                         defaultPageSize = {this.props.contentDocument.contentContent.table.length}
                         pageSizeOptions = {[this.props.contentDocument.contentContent.table.length, 10, 50, 100]}
+                        className="-striped -highlight"
                     />
 
                 </div>
