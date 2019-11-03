@@ -36,7 +36,7 @@ class Tables extends Page {
         return(
             <PageLayout title={"LLU: Tables"} description={"All the tables on the Little Look-Up"}>
 
-                <h2>Table List</h2>
+                <h2 className="m-4">Table List</h2>
                 <ListGroup>
                     {this.props.tables.map(table => (
                         <ListGroupItem key={table._id}>

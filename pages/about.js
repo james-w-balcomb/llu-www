@@ -11,28 +11,26 @@ class About extends Page {
 
                     <Container className="mt-2 mb-2">
 
-                        <p>
-                            Hello, welcome, and thank you for checking us out.
-                        </p>
-
-                        <p className="lead mb-5">
-                            The Little Look-Up (LLU) is meant to be the simplest source for the most useful reference material.
-                        </p>
+                        <h2 className="m-4">
+                            About us
+                        </h2>
 
                         <p>
-                            While the advertisements pay the bills, the primary purpose of the web-site is to provide you, and the rest of the world, with a minimalistic interface to the tidbits of knowledge.
+                            Little Look-Up (LLU) is meant to a the simple and easy-to-use nexus for all types of reference material.
                         </p>
 
                         <p>
-                            Some of the information housed here is, of course, available elsewhere, but we hope to wrap that information up in here in the most palatable user experience you can find.
-                            This is includes such things as <i>not</i> using images for tables, because we all know that the most useful option is to be able to copy and paste it.
-                            As well as making the pages load as fast as possible and not having parts of the page jumping around while it's loading.
+                            The primary purpose of this site is to provide you with a minimalistic way of accessing tidbits of knowledge.
                         </p>
 
                         <p>
-                            Part of what is being done here is the collection of data around who is using the site, how they got here, what they are looking for, and how they are using it.
-                            By analyzing and profiling searches, results, users, and access patterns, we hope to optimally reach the goal of what we serve and how we serve it.
+                            Most of the information housed here is available elsewhere, but we hope to provide this information in the most palatable user experience possible.
+                            This includes things like <i>not</i> using images for tables, as well as making pages load as fast as possible and not have parts of the page jump around during loading.
                         </p>
+
+                        <h4 className="mb-5 mt-5">
+                            Thanks for checking us out!
+                        </h4>
 
                     </Container>
 

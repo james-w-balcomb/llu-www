@@ -8,7 +8,9 @@ class PageFooter extends React.Component {
         return (
             <React.Fragment>
 
-                   <hr className="mt-4 mb-2" />
+                <ContentCardsData />
+
+                <hr className="mt-4 mb-2" />
                     <div className="text-muted small">
                         <span className="ml-2">::</span>
                         <span className="ml-2">
@@ -18,9 +20,6 @@ class PageFooter extends React.Component {
                         <span className="ml-2">&copy; {new Date().getFullYear()}.</span>
                     </div>
                 <hr className="mt-2 mb-4" />
-
-                <ContentCardsData />
-
             </React.Fragment>
         )
     }

@@ -17,10 +17,6 @@ class TermsAndConditions extends Page {
 
                     <img src="/static/netclipart.com-barney-clipart-589902.png" alt="Barney" height="320"/>
 
-                    <p>
-                        So... Let's just keep it that way.
-                    </p>
-
                 </Container>
 
             </PageLayout>
