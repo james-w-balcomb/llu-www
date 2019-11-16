@@ -11,23 +11,26 @@ const { publicRuntimeConfig } = getConfig();
 const LLU_API_URL = publicRuntimeConfig.LLU_API_URL;
 
 function ContentType({contentDocument}) {
+    console.log("ContentPage.ContentType({contentDocument})");
 
     const contentType = contentDocument.contentType;
 
     if (contentType === "table") {
-        console.log("ContentTypeTable");
+        console.log("contentType: table");
         return <ContentTypeTable  contentDocument={contentDocument} />;
     }
+    console.log("contentType: raw");
     return <ContentTypeRaw  contentDocument={contentDocument} />;
-
 }
 
 class ContentPage extends Page {
 
     static async getInitialProps ({ query: { contentPagePath } }) {
+        console.log("ContentPage.getInitialProps ({ query: { contentPagePath } })");
 
         const res = await fetch(`${LLU_API_URL}/content/page-path/${contentPagePath}`);
         const json = await res.json();
+
         return { contentDocument: json }
     }
 
@@ -47,7 +50,7 @@ class ContentPage extends Page {
                     <hr />
                 </div>
 
-                <ContentType contentDocument={this.props.contentDocument} />,
+                <ContentType contentDocument={this.props.contentDocument} />
 
             </PageLayout>
         )

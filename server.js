@@ -4,8 +4,6 @@ const next = require('next');
 const LLU_WWW_ADDRESS = process.env.LLU_WWW_ADDRESS || "127.0.0.1";
 const LLU_WWW_PORT = process.env.LLU_WWW_PORT || 3100;
 const dev = process.env.NODE_ENV !== 'production';
-// function next(options?: next.ServerOptions & { dev: true }): next.DevServer;
-// function next(options?: next.ServerOptions): next.Server;
 const app = next({ dev });
 const handle = app.getRequestHandler();
 

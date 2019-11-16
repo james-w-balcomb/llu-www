@@ -11,6 +11,8 @@ class ContentTypeTable extends React.Component {
     }
 
     extractColumns(content) {
+        console.log("ContentTypeTable.extractColumns(content)");
+
         const columns = [];
         const firstElement = content[0];
 
@@ -23,6 +25,7 @@ class ContentTypeTable extends React.Component {
     }
 
     render() {
+        console.log("ContentTypeTable.render()");
 
         return (
             <React.Fragment>
