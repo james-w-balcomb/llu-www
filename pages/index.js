@@ -2,6 +2,13 @@ import React from 'react'
 import { Container, Jumbotron } from 'reactstrap'
 import Page from '../components/Page.js'
 import PageLayout from '../components/PageLayout.js'
+import TagManager from 'react-gtm-module'
+
+const tagManagerArgs = {
+    gtmId: 'GTM-5JB3M2T'
+};
+
+TagManager.initialize(tagManagerArgs);
 
 class Index extends Page {
     render() {
