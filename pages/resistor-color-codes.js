@@ -15,7 +15,7 @@ class ResistorColorCodes extends Page {
 
                 <Head>
                     <title>Resistor Color Codes</title>
-                    <link href="/static/resistor-color-codes.css" rel="stylesheet" />
+                    <link href="/static/css/resistor-color-codes.css" rel="stylesheet" />
                 </Head>
 
                 <Container>
