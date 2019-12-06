@@ -19,36 +19,14 @@ class Table extends Page {
     }
 
     static async getInitialProps(context) {
-        console.log("getInitialProps");
-        console.log("context:");
-        console.log(context);
-
         const { id } = context.query;
         const res = await fetch(`${LLU_API_URL}/api/tables/${id}`);
-
-        console.log("res:");
-        console.log(res);
-
         const table = await res.json();
-
-        console.log("table:");
-        console.log(table);
-
         return { table };
 
     }
 
     checkColumns(props) {
-        // <ReactTable
-        //     data={this.props.table.content}
-        //     columns={this.checkColumns(this.props)}
-        //     defaultPageSize = {this.props.table.content.length}
-        //     pageSizeOptions = {[this.props.table.content.length, 10, 50, 100]}
-        // />
-        console.log("checkColumns");
-        console.log("props:");
-        console.log(props);
-
         const columns = [];
         const firstElement = props.table.content[0];
 
@@ -60,16 +38,6 @@ class Table extends Page {
     }
 
     extractColumns(content) {
-        // <ReactTable
-        //     data={this.props.table.content}
-        //     columns={this.extractColumns(this.props.table.content)}
-        //     defaultPageSize = {this.props.table.content.length}
-        //     pageSizeOptions = {[this.props.table.content.length, 10, 50, 100]}
-        // />
-        console.log("extractColumns");
-        console.log("content:");
-        console.log(content);
-
         const columns = [];
         const firstElement = content[0];
 
@@ -82,17 +50,6 @@ class Table extends Page {
     }
 
     render() {
-        console.log("LLU_API_URL: " + LLU_API_URL);
-        // console.log("props:");
-        // console.log(props);
-        console.log("this.props:");
-        console.log(this.props);
-        console.log("this.state:");
-        console.log(this.state);
-
-        const { table } = this.props;
-        console.log("render - table:");
-        console.log(table);
 
         return (
             <PageLayout title={this.props.table.title} description={this.props.table.description}>

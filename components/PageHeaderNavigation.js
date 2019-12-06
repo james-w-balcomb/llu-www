@@ -13,8 +13,8 @@ class PageHeaderNavigation extends React.Component {
                 <Navbar light color="light" className="navbar navbar-expand-md pt-3 pb-3">
                     <Link prefetch href="/">
                         <NavbarBrand href="/">
-                            <img src="/static/LittleLookUp-Birdie2-tiny.png" alt="Little Look-Up Birdie" />
-                            <span className="icon ion-md-home mr-1"/> Little Look-Up
+                            <img src="/static/sethernet-bird_only.png" alt="Little Look-Up Birdie" style={{width:'30px'}}/>
+                            <span className="icon ion-md-home mr-2"/> Little Look-Up
                         </NavbarBrand>
                     </Link>
                 </Navbar>

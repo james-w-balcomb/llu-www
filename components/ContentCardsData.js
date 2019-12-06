@@ -11,6 +11,7 @@ import {
     CardBody,
     CardText,
     CardLink } from 'reactstrap';
+import "../static/css/card-styles.css";
 
 const { publicRuntimeConfig } = getConfig();
 const LLU_API_URL = publicRuntimeConfig.LLU_API_URL;
@@ -31,7 +32,7 @@ class ContentCardsData extends React.Component {
     }
 
     componentDidMount() {
-        console.log("componentDidMount");
+        console.log("ContentCardsData.componentDidMount()");
         fetch(`${LLU_API_URL}/page-path-title-description-list`)
             .then(res => res.json())
             .then((data) => {
@@ -43,12 +44,6 @@ class ContentCardsData extends React.Component {
 
     render() {
         console.log("ContentCardsData.render()");
-        // console.log("props");
-        // console.log(props);
-        console.log("this.props");
-        console.log(this.props);
-        console.log("this.state");
-        console.log(this.state);
 
         return(
 
@@ -57,10 +52,10 @@ class ContentCardsData extends React.Component {
                     <Col>
                         <CardColumns>
                             {this.state.contentDocuments.map(contentDocument => (
-                                <Card key={contentDocument.contentPagePath} style={{ backgroundColor: '#A6A6A6', borderColor: '#947cb0'}}>
+                                <Card key={contentDocument.contentPagePath}>
                                     <CardBody>
                                         <CardTitle className="h5 mb-2 pt-2 font-weight-bold">
-                                            <CardLink href={contentDocument.contentPagePath} className="btn btn-dark btn-block">
+                                            <CardLink href={`/content/${contentDocument.contentPagePath}`} className="btn btn-dark btn-block">
                                                 {contentDocument.contentPageTitle}
                                             </CardLink>
                                         </CardTitle>
