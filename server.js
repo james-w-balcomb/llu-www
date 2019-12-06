@@ -1,9 +1,16 @@
 const express = require('express');
 const next = require('next');
+import TagManager from 'react-gtm-module'
+
+const tagManagerArgs = {
+    gtmId: 'GTM-5JB3M2T'
+};
+TagManager.initialize(tagManagerArgs);
 
 const LLU_WWW_ADDRESS = process.env.LLU_WWW_ADDRESS || "127.0.0.1";
 const LLU_WWW_PORT = process.env.LLU_WWW_PORT || 3100;
 const dev = process.env.NODE_ENV !== 'production';
+
 const app = next({ dev });
 const handle = app.getRequestHandler();
 

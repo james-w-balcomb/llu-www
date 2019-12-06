@@ -5,6 +5,7 @@ import fetch from 'isomorphic-unfetch'
 import { ListGroup, ListGroupItem } from 'reactstrap';
 import Page from '../components/Page.js'
 import PageLayout from '../components/PageLayout.js'
+import TagManager from 'react-gtm-module'
 
 const { publicRuntimeConfig } = getConfig();
 const LLU_API_URL = publicRuntimeConfig.LLU_API_URL;
@@ -22,6 +23,26 @@ class Tables extends Page {
         const res = await fetch(`${LLU_API_URL}/api/tables`);
         const tables = await res.json();
         return { tables }
+    }
+
+    componentDidMount() {
+        console.log("ResistorColorCodes.componentDidMount()");
+        const tagManagerArgs = {
+            event: 'PageView',
+            yourData: {
+                someField: 'foo',
+                otherField: 'bar'
+            },
+            dataLayer: {
+                userId: '001',
+                userProject: 'project',
+                page: 'tables'
+            },
+            dataLayerName: 'PageDataLayer'
+        };
+        console.log("tagManagerArgs");
+        console.log(tagManagerArgs);
+        TagManager.dataLayer(tagManagerArgs);
     }
 
     render() {

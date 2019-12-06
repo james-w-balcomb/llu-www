@@ -4,14 +4,22 @@ import Page from '../components/Page.js'
 import PageLayout from '../components/PageLayout.js'
 import TagManager from 'react-gtm-module'
 
-const tagManagerArgs = {
-    gtmId: 'GTM-5JB3M2T'
-};
-
-TagManager.initialize(tagManagerArgs);
-
 class Index extends Page {
+
+    componentDidMount() {
+        console.log("Index.componentDidMount()");
+        const data = {
+            event: 'PageView',
+            yourData: {
+                someField: 'foo',
+                otherField: 'bar'
+            }
+        };
+        TagManager.dataLayer(data);
+    }
+
     render() {
+
         return(
 
             <PageLayout

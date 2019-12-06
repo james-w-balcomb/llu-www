@@ -3,9 +3,31 @@ import Head from 'next/head';
 import Page from "../components/Page";
 import PageLayout from "../components/PageLayout";
 import { Container } from "reactstrap";
+import TagManager from 'react-gtm-module'
 
 class ResistorColorCodes extends Page {
+
+    componentDidMount() {
+        console.log("ResistorColorCodes.componentDidMount()");
+        const tagManagerArgs = {
+            event: 'PageView',
+            yourData: {
+                someField: 'foo',
+                otherField: 'bar'
+            },
+            dataLayer: {
+                userId: '001',
+                userProject: 'project',
+                page: 'resistor-color-codes'
+            },
+            dataLayerName: 'PageDataLayer'
+        };
+
+        TagManager.dataLayer(tagManagerArgs);
+    }
+
     render() {
+
         return(
 
             <PageLayout
