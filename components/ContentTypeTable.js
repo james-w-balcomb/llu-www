@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactTable from "react-table";
+import "../static/css/table-styles.css";
+import 'react-table/react-table.css';
 
 class ContentTypeTable extends React.Component {
 
@@ -27,25 +29,15 @@ class ContentTypeTable extends React.Component {
 
         return (
             <React.Fragment>
-
+                {this.props.children}
                 <div className="mr-5 ml-5">
-
-                    <div>
-                        <h3 className="d-flex justify-content-center mt-5">
-                            {this.props.contentDocument.contentPageTitle}
-                        </h3>
-                        <p className="d-flex justify-content-center mb-5">
-                            {this.props.contentDocument.contentPageDescription}
-                        </p>
-                    </div>
-
                     <ReactTable
                         data={this.props.contentDocument.contentContent.table}
                         columns={this.extractColumns(this.props.contentDocument.contentContent.table)}
                         defaultPageSize = {this.props.contentDocument.contentContent.table.length}
                         pageSizeOptions = {[this.props.contentDocument.contentContent.table.length, 10, 50, 100]}
+                        className="-striped -highlight"
                     />
-
                 </div>
 
             </React.Fragment>
