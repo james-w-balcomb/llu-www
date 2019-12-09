@@ -35,6 +35,16 @@ export function GoogleAnalyticsScriptAsynchronousLoadLibrary() {
     );
 }
 
+export function GoogleAnalyticsScriptAutotrack() {
+    return (
+        <script
+            dangerouslySetInnerHTML={{
+                __html: `window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create', '${GA_MEASUREMENT_ID}', 'auto');ga('require', 'eventTracker');ga('require', 'outboundLinkTracker');ga('require', 'urlChangeTracker');ga('send', 'pageview');`
+            }}
+        />
+    );
+}
+
 // module.exports = {
 //     GoogleAnalyticsScript: GoogleAnalyticsScript,
 //     GoogleAnalyticsScriptAsynchronousCreateCommandAndQueue: GoogleAnalyticsScriptAsynchronousCreateCommandAndQueue,

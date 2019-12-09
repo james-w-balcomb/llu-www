@@ -19,7 +19,7 @@ class CustomerDocument extends Document {
         return (
             <Html>
                 <Head>
-                    <GoogleAnalyticsScript />
+                    <GoogleAnalyticsScriptAutotrack />
                 </Head>
                 <body>
                 <Main />
