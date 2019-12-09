@@ -24,6 +24,7 @@ class PageHeadMeta extends React.Component {
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"/>
                     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"/>
                     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"/>
+                    <script src='https://www.google-analytics.com/analytics.js'/>
                     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/react-table/6.10.3/react-table.css" />
                 </Head>
