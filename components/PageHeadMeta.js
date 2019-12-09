@@ -27,6 +27,7 @@ class PageHeadMeta extends React.Component {
                     <script src='https://www.google-analytics.com/analytics.js'/>
                     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/react-table/6.10.3/react-table.css" />
+                    <link rel="shortcut icon" href="/static/LittleLookUp-Birdie2-tiny.png" />
                 </Head>
 
             </React.Fragment>

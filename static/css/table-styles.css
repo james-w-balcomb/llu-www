@@ -1,0 +1,13 @@
+.rt-th {
+    background: radial-gradient(ellipse at center, rgba(211, 235, 247, 0.02) 0%, rgba(31, 85, 181, 0.3) 100%);
+    border: 1px solid #414141;
+}
+
+.ReactTable .rt-td {
+    font-size: 14px;
+    text-align: center;
+}
+
+.ReactTable .rt-thead .rt-th, .ReactTable .rt-thead .rt-td {
+    padding: 10px;
+}
