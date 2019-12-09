@@ -3,9 +3,7 @@
 
 // ./pages/_document.js
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-// import { GoogleTagManagerScriptHead } from "../components/GoogleTagManagerScriptHead";
-// import { GoogleTagManagerScriptBody } from "../components/GoogleTagManagerScriptBody";
-import { GoogleAnalyticsScript } from "../components/GoogleAnalyticsScript";
+import { GoogleAnalyticsScriptAutotrack } from "../components/GoogleAnalyticsScript";
 // import React from "react";
 
 class CustomerDocument extends Document {
